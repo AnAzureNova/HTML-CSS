@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">HTML-CSS/Second/index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainworld Knock Off Wiki</title>
     <link rel="icon" type="image/x-icon" href="wlizard.ico">
+    <style type="text/css">
+        a:link { color: #d1d0d3; text-decoration: none; font-weight: normal; }
+        a:visited { color: #d1d0d3; text-decoration: none; font-weight: normal; }
+        a:active { color: #d1d0d3; text-decoration: none; }
+    </style>
+    <style>
+        body
+        {
+            background-image: url("BG.png");
+            background-repeat: no-repeat;
+            background-blend-mode: overlay;
+            background-attachment: fixed;
+            background-size:cover;
+            background-color: rgb(14, 13, 15); 
+        }
+        div.main
+        {
+            line-height: 70px; 
+            margin: 10px auto; 
+            text-align: center;
+            vertical-align: middle; 
+            font-size: 300%;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        }
+        div.title
+        {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            color: #c2bccd;
+            text-align: center;
+        }
+        div.ch1
+        {
+            a:hover { color: rgb(255, 255, 255); text-decoration: none; font-weight: 400; transition: 0.5s;}
+        }
+        div.ch2
+        {
+            a:hover { color: rgb(217, 222, 114); text-decoration: none; font-weight: 400; transition: 0.5s;}
+        }
+        div.ch3
+        {
+            a:hover { color: rgb(231, 96, 96); text-decoration: none; font-weight: 400; transition: 0.5s;}
+        }
+    </style>
 </head>
-<style>
-    body{
-        background-image: url("BG.png");
-        background-repeat: no-repeat;
-        background-blend-mode: overlay;
-        background-attachment: fixed;
-        background-size:cover;
-        background-color: rgb(14, 13, 15); 
-    }
-    div.main
-    {
-        size: 50%;
-        line-height: 80px; 
-        margin: 130px auto; 
-        text-align: center;
-        vertical-align: middle; 
-        font-size: 400%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    div.title
-    {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: 130px auto;
-        line-height: 90px; 
-        color: #c2bccd;
-        text-align: center;
-    }
-</style>
 <body bgcolor="black">
     <div class="title">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.steamgriddb.com%2Ffile%2Fsgdb-cdn%2Flogo_thumb%2F44374c1f0ebad6dc48951e6c20c25806.png&f=1&nofb=1&ipt=23d98419107294e0dfaadc3badb96b1263b3f38a947d6df9fe106eb10834215d" style="align-items: center;" alt="Rainworld">
+        <a href="https://store.steampowered.com/app/312520/Rain_World/" target="_blank"><img src="https://rainworldgame.com/images/logga.png" style="align-items: center;" alt="Rainworld"></a>
     </div>
     <div class="main">
-        <img src="survivor.ico" style="width: 50px;">
-        <a href="char1.html" target="_self" style="color: #ffffff; text-decoration: none;" >&nbsp;SURVIVOR&nbsp;</a>
-        <img src="survivor.ico" style="width: 50px;">
-        <br>
-        <img src="monk.ico" style="width: 50px;">
-        <a href="char2.html" target="_self" style="color: #d4df7f; text-decoration: none;">&nbsp;MONK&nbsp;</a>
-        <img src="monk.ico" style="width: 50px;">
-        <br>
-        <img src="hunter.ico" style="width: 50px;">
-        <a href="char3.html" target="_self" style="color: #c57a7a; text-decoration: none;">&nbsp;HUNTER&nbsp;</a>
-        <img src="hunter.ico" style="width: 50px;">
+        <div class="ch1">
+            <a href="char1.html" target="_self" style="text-decoration: none; font-weight: 200;">&nbsp;SURVIVOR&nbsp;</a>
+            <br>
+        </div>
+        <div class="ch2">
+            <a href="char2.html" target="_self" style="text-decoration: none;  font-weight: 200;">&nbsp;MONK&nbsp;</a>
+            <br>
+        </div>
+        <div class="ch3">
+            <a href="char3.html" target="_self" style="text-decoration: none;  font-weight: 200;">&nbsp;HUNTER&nbsp;</a>
+        </div>
     </div>
 </body>
 </html>
