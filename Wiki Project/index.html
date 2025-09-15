@@ -24,18 +24,21 @@
         ];
         let currentIndex = 0;
         let preloadDone = false;
-        function changeBackground() 
+        function preloadBG()
         {
-            if (preloadDone === false)
+            if (preloadDone = false)
             {
                 document.body.style.backgroundImage = `url("${images[currentIndex]}")`;
                 currentIndex = (currentIndex + 1) % images.length;
                 preloadDone = true;
-                setInterval(changeBackground, 6000);
             }
+        }
+        function changeBackground() 
+        {
             document.body.style.backgroundImage = `url("${images[currentIndex]}")`;
             currentIndex = (currentIndex + 1) % images.length;
         }
+        setInterval(preloadBG, 1);
         setInterval(changeBackground, 6000);
         changeBackground();
     </script>
