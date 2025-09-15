@@ -1,44 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">HTML-CSS/Second/index.html
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainworld Knock Off Wiki</title>
     <link rel="icon" type="image/x-icon.png" href="https://static.wikitide.net/rainworldwiki/6/6f/White_Lizard_icon.png">
-    <script>
-        const images = 
-        [
-            "https://static.wikitide.net/rainworldwiki/2/2c/RW_SU_A53.png",
-            "https://static.wikitide.net/rainworldwiki/7/79/RW_SU_A53-Rivulet.png",
-            "https://static.wikitide.net/rainworldwiki/2/2c/RW_SU_A53-Saint.png",
-            "https://static.wikitide.net/rainworldwiki/e/e9/RW_UW_F01.png",
-            "https://static.wikitide.net/rainworldwiki/2/28/UW_F01-night.png",
-            "https://static.wikitide.net/rainworldwiki/5/5c/UW_F01-Rivulet.png",
-            "https://static.wikitide.net/rainworldwiki/a/a5/SI_C02.png",
-            "https://static.wikitide.net/rainworldwiki/5/55/SI_C02-Rivulet.png",
-            "https://static.wikitide.net/rainworldwiki/6/69/SI_C02-Saint.png",
-            "https://static.wikitide.net/rainworldwiki/4/45/RW_GW_Past_C02_PAST.png",
-            "https://static.wikitide.net/rainworldwiki/8/87/RW_GW_C02.png",
-            "https://static.wikitide.net/rainworldwiki/4/47/RW_GW_C02-Rivulet.png",
-            "https://static.wikitide.net/rainworldwiki/0/04/RW_GW_C02-Saint.png"
-        ];
-        let currentIndex = 0;
-        let preloadDone = false;
-        function changeBackground() 
-        {
-            if (preloadDone === false)
-            {
-                document.body.style.backgroundImage = `url("${images[currentIndex]}")`;
-                currentIndex = (currentIndex + 1) % images.length;
-                preloadDone = true;
-                setInterval(changeBackground, 6000);
-            }
-            document.body.style.backgroundImage = `url("${images[currentIndex]}")`;
-            currentIndex = (currentIndex + 1) % images.length;
-        }
-        setInterval(changeBackground, 6000);
-        changeBackground();
-    </script>
     <style type="text/css">
         a:link { color: #d1d0d3; text-decoration: none; opacity: 0.7;}
         a:visited { color: #d1d0d3; text-decoration: none; opacity: 0.7;}
@@ -111,9 +77,35 @@
         {
             a:hover { color: rgb(231, 96, 96); transition: 0.5s;  opacity: 1;}
         }
-    </style>c
+    </style>
 </head>
-<body background-color="black">
+<body>
+    <script>
+        const images = 
+        [
+            "resources/RW_O1.png",
+            "resources/RW_O2.png",
+            "resources/RW_O3.png",
+            "resources/RW_GW1.png",
+            "resources/RW_GW2.png",
+            "resources/RW_GW3.png",
+            "resources/RW_GW4.png",
+            "resources/RW_E1.png",
+            "resources/RW_E2.png",
+            "resources/RW_E3.png",
+            "resources/RW_FA1.png",
+            "resources/RW_FA2.png",
+            "resources/RW_FA3.png"
+        ];
+        let currentIndex = 0;
+        function changeBackground() 
+        {
+            document.body.style.backgroundImage = `url("${images[currentIndex]}")`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+        setInterval(changeBackground, 6000);
+        changeBackground();
+    </script>
     <div class="titleimg">
         <a href="https://store.steampowered.com/app/312520/Rain_World/" target="_blank"><img src="https://rainworldgame.com/images/logga.png" style="align-items: center; opacity: 1;" alt="Rainworld"></a>
     </div>
@@ -131,6 +123,8 @@
         </div>
     </div>
     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngmart.com%2Ffiles%2F23%2FBlack-Blur-PNG-Photos.png&f=1&nofb=1&ipt=b54ea1b0385fd674b73762e08893084432f52370661470f1103a80246b09518b" id="vignette">
-    <img src="rain.gif" id="rain" style="mix-blend-mode: lighten;">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F05%2F64%2F67%2F10%2F360_F_564671062_o1nEEdUdj2OZMdqX547ctjl66FQxImcP.jpg&f=1&nofb=1&ipt=0bcb0b15190e0f98a3814a4677cf661b1147ee66bf72c9657faf30dea12b5ddc" id="vignette" style="mix-blend-mode:multiply; opacity: 0.5;">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.freejpg.com.ar%2F900%2F1212%2Fgrainy-vignettes-background-overlay-png-F100036014.png&f=1&nofb=1&ipt=fd5036ab1825bcd5c9066c2800896f22381d4813be293bb71adbffe2b275c073" id="vignette" style="mix-blend-mode: multiply; opacity: 0.5;">
+    <img src="resources/rain.gif" id="rain" style="mix-blend-mode: lighten;">
 </body>
 </html>
