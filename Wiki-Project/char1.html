@@ -15,6 +15,8 @@
     <style>
         body
         {
+            margin: 30px 30px;
+            border: 2px solid white;
             background-image: url("https://static.wikitide.net/rainworldwiki/thumb/3/33/Sillyslide1.jpg/1024px-Sillyslide1.jpg");
             background-repeat: no-repeat;
             background-blend-mode: overlay;
@@ -22,9 +24,168 @@
             background-size:cover;
             background-color: rgb(20, 20, 20); 
         }
+        #vignette
+        {
+            position:fixed; 
+            width: 100vw; 
+            height: 100vh; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1; 
+            opacity: 1;
+            pointer-events: none;
+        }
+        #rain
+        {
+            position: fixed; 
+            width: 100vw; 
+            height: 120vh; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1; 
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        div.headerBlock
+        {
+            color: rgb(255, 255, 255);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        }
+        div.mainHeader
+        {
+            block-size: 60px;
+            text-align: left;
+            margin-left: 100px;
+            margin-bottom: 30px;
+            font-size: 25px;
+            align-items: center;
+            display:flex;
+        }
+        #portrait
+        {
+            float: left;
+            font-size: 20px;   
+            margin: auto 30px;
+        }
+        div.portraitText
+        {
+            text-align: left;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-left: 200px;
+            width: 500px;
+            color: rgb(137, 137, 137);
+        }
+        div.textBlock
+        {
+            color: rgb(255, 255, 255);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            text-align: block;
+            margin-top: 50px;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        table
+        {
+            border-collapse: collapse;
+            border: 2px solid white;
+            margin-left: 60px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            text-align: center;
+            width: 30%;
+        }
+        caption
+        {
+            font-weight: bold;
+            background-color: #1f1f1f;
+            border: 2px solid white;
+            margin: 10px auto;
+        }
+        tr
+        {
+            background-color: #1f1f1f;
+            border-bottom: 1px solid #ffffff;
+        }
+        tr:hover {background-color: #4a4a4a;}
+        td
+        {
+            width: 30%;
+        }
+        th
+        {   
+            width: 70%;
+        }
     </style>
 </head>
 <body>
-    <a href="index.html" target="_self" style="font-size: 150%; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&larrhk; BACK</a>  
+    <img src="resources/rain.gif" id="rain" style="mix-blend-mode: lighten;">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngmart.com%2Ffiles%2F23%2FBlack-Blur-PNG-Photos.png&f=1&nofb=1&ipt=b54ea1b0385fd674b73762e08893084432f52370661470f1103a80246b09518b" id="vignette">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F05%2F64%2F67%2F10%2F360_F_564671062_o1nEEdUdj2OZMdqX547ctjl66FQxImcP.jpg&f=1&nofb=1&ipt=0bcb0b15190e0f98a3814a4677cf661b1147ee66bf72c9657faf30dea12b5ddc" id="vignette" style="mix-blend-mode:multiply; opacity: 0.5;">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.freejpg.com.ar%2F900%2F1212%2Fgrainy-vignettes-background-overlay-png-F100036014.png&f=1&nofb=1&ipt=fd5036ab1825bcd5c9066c2800896f22381d4813be293bb71adbffe2b275c073" id="vignette" style="mix-blend-mode: multiply; opacity: 0.5;">
+    <a href="index.html" target="_self" style="font-size: 180%; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>&nbsp;&nbsp;&larrhk;</b></a> 
+    <div class="headerBlock">
+        <div class="mainHeader">
+            <h1>SURVIVOR</h1>
+        </div> 
+        <div id="portrait">
+            <img src="https://static.wikitide.net/rainworldwiki/a/a7/Survivor_portrait.png" alt="survivor portrait" style="width: 110px;">
+        </div>
+        <div class="portraitText">
+            <p>
+                <i>"A nimble omnivore, both predator and prey. Lost in a harsh and indifferent land you must make your own way, with wit and caution as your greatest assets."</i>
+            </p>
+        </div>
+    </div>
+    <div class="textBlock">
+        <p style="width: 40%; text-indent:40px ">
+            The classic Rain World experience, <b>The Survivor</b> must deal with the ever-present threat of predators while trying to find their way through this hostile world. <b>Survivor has standard Slugcat stats and abilities.</b>
+        </p>
+        <table>
+            <caption>
+                Survivors stats
+            </caption>
+            <tr>
+                <th>Lung Capacity</th>
+                <td>1.0x</td>
+            </tr>
+            <tr>
+                <th>Throwing skill</th>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <th>Spear damage</th>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <th>Speed</th>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <th>Mass</th>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <th>Loudness</th>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <th>Visibility bonus</th>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th>Crawling strenght</th>
+                <td>0.5 (standard)</td>
+            </tr>
+        </tr>
+        </table>
+        <p>
+            Food pips:
+            <img src="https://static.wikitide.net/rainworldwiki/4/4f/Food_pip_empty_%28medium%29.png">
+        </p>
+    </div>
 </body>
 </html>
