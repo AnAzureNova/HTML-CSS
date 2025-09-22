@@ -1,45 +1,75 @@
-body 
-{
-    background-color: black;
+body {
+    background-color: rgb(30, 24, 31);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(135, 116, 143);
     font-weight: 100;
     font-size: 30px;
-    word-spacing: 1px;
 }
-.input
-{
-    height: 100vh;
-    background-color: rgb(30, 24, 31);
+.main{
+    margin: 120px;
+    z-index: 2;
+}
+.header{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(117, 101, 124);
+    line-height: 0.5px;
+    padding: 20px;
+    margin: 20px;
+    font-weight: 100;
+    font-size: 29px;
+    text-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    text-align: center;
 }
-.output
-{
+.header:hover{
+    font-size: 30px;
+    color: rgb(135, 116, 143);
+    text-shadow: 0 10px 50px rgba(255, 255, 255, 0.3);
+}
+.input{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px; 
+}
+.output{
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-table
-{
+#link{
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 300ms;
+}
+a:link{color: #d1d0d3; text-decoration: none; opacity: 0.7; font-size: 30px;}
+a:visited{color: #d1d0d3; text-decoration: none; opacity: 0.7; font-size: 30px;}
+a:active{color: #d1d0d3; text-decoration: none; opacity: 0.7; font-size: 30px;}
+a:hover{color: white; text-decoration: none; opacity: 1; font-size: 35px;}
+table{
     border-collapse: collapse;
+    background-color: rgb(30, 24, 31);
     border: 1px solid white;
     text-align: center;
     font-weight: 100;
 }
-tr
-{
-    border: 1px solid white;
+tr,td,th {border: 1px solid white;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-#inputName, #inputScore
-{
-    height: 30px;
-    width: 400px;
+#inputName, #inputScore{
+    letter-spacing: 1px;
+    height: 25px;
+    width: 270px;
     background-color: rgb(34, 30, 36);
     border: 1px solid rgb(135, 116, 143);
     color: rgb(135, 116, 143);
@@ -47,48 +77,94 @@ tr
     font-weight: 100;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    transition: ease-in-out 200ms;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms;
 }
-#inputName:focus
-{
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(89, 80, 94);
-}
-#inputScore:focus
-{
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(89, 80, 94);
-}
-#inputName:hover
-{
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(89, 80, 94);
-}
-#inputScore:hover
-{
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(89, 80, 94);
-}
-#buttonSubmit
-{
+#inputScore{width: 230px}
+#inputName:focus{
+    letter-spacing: 3px;
+    font-size: 22px;
+    width: 450px;
     height: 30px;
-    width: 200px;
-    background-color: rgb(34, 30, 36);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(61, 59, 61);
+}
+#inputScore:focus{
+    letter-spacing: 3px;
+    font-size: 22px;
+    width: 300px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(61, 59, 61);
+}
+#inputName:hover{
+    letter-spacing: 4px;
+    font-size: 22px;
+    width: 500px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(85, 75, 88);
+}
+#inputScore:hover{
+    letter-spacing: 4px;
+    font-size: 22px;
+    width: 350px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(85, 75, 88);
+}
+#buttonSubmit{
+    margin-top: 100px;
+    font-size: 30px;
+    opacity: 0.7; 
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(135, 116, 143);
     font-weight: 100;
     text-align: center;
-    border: 1px solid rgb(135, 116, 143);
-    transition: ease-in-out 150ms;
-    
+    cursor: pointer;
+    border: 0px;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 300ms;
 }
-#buttonSubmit:hover 
-{
+#buttonClear{
+    position: absolute;
+    bottom: 80px;
+    right: 41px;
+    opacity: 0.7; 
+    font-size: 30px;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d1d0d3;
+    border: 0px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 300ms;
+}
+#buttonSubmit:hover{
+    font-size: 35px;
+    opacity: 1;
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(89, 80, 94);
+}
+#buttonClear:hover{
+    font-size: 35px;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+#overlay1{
+    position: fixed; 
+    width: 100vw; 
+    height: 120vh; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3; 
+    opacity: 0.4;
+    mix-blend-mode: color-burn;
+    pointer-events: none;
 }

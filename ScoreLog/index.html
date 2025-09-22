@@ -7,14 +7,21 @@
     <title>SCORE SAVER</title>
 </head>
 <body>
-    <div class="input">
-        <label for="inputName" id="inputHeader1">Your name</label><br>
-        <input type="text" id="inputName" name="inputName"></textarea><br>
-        <label for="inputScore" id="inputHeader2">Score</label><br>
-        <input type="number" id="inputScore" name="inputScore"><br><br>
-        <button type="submit" id="buttonSubmit">SUBMIT</button><br><br><br>
-        <a href="log.html" target="_self">LOG</a>
-
+    <img src="grad.png" alt="gradientoverlay" 
+    id="overlay1">
+    <div class="main">
+        <div class="input">
+            <div class="header">
+                <h1>ENTER YOUR SCORE</h1>
+                <p style="font-size: 15px;">For me to write it down >:)</p>
+            </div>
+            <label for="inputName" id="inputHeader1">Your name</label><br>
+            <input type="text" id="inputName" name="inputName" maxlength="30"><br>
+            <label for="inputScore" id="inputHeader2">Score</label><br>
+            <input type="number" id="inputScore" name="inputScore" min="0" max="999999">
+            <button type="submit" id="buttonSubmit">SUBMIT</button>
+            <a href="log.html" target="_self" id="link">VIEW LOG</a>
+    </div>
     </div>
     <script src="scriptInput.js"></script>
 </body>

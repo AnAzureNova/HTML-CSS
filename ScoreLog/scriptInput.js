@@ -7,7 +7,7 @@ button.addEventListener("click", () => {
     let scoreInput = scoreIN.value.trim();
     if (!nameInput || !scoreInput) 
     {
-        alert("Please enter both name and score.");
+        alert("INVALID INPUT");
         return;
     }
     let storedData = JSON.parse(localStorage.getItem("scores")) || [];
