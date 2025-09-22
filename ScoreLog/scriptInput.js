@@ -13,5 +13,5 @@ button.addEventListener("click", () => {
     let storedData = JSON.parse(localStorage.getItem("scores")) || [];
     storedData.push({ name: nameInput, score: scoreInput });
     localStorage.setItem("scores", JSON.stringify(storedData));
-    window.location.href = 'log.html';
+    window.location.reload();
 });

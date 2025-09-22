@@ -2,16 +2,15 @@ body
 {
     background-color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: rgb(135, 116, 143);
     font-weight: 100;
     font-size: 30px;
-    margin: 0;
-    padding: 0;
+    word-spacing: 1px;
 }
 .input
 {
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(30, 24, 31);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -41,15 +40,55 @@ tr
 {
     height: 30px;
     width: 400px;
-    background-color: black;
-    border: 1px solid white;
-    color: white;
+    background-color: rgb(34, 30, 36);
+    border: 1px solid rgb(135, 116, 143);
+    color: rgb(135, 116, 143);
     font-size: 15px;
     font-weight: 100;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    transition: ease-in-out 200ms;
 }
-.gfg 
+#inputName:focus
 {
     color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(89, 80, 94);
+}
+#inputScore:focus
+{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(89, 80, 94);
+}
+#inputName:hover
+{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(89, 80, 94);
+}
+#inputScore:hover
+{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(89, 80, 94);
+}
+#buttonSubmit
+{
+    height: 30px;
+    width: 200px;
+    background-color: rgb(34, 30, 36);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(135, 116, 143);
+    font-weight: 100;
+    text-align: center;
+    border: 1px solid rgb(135, 116, 143);
+    transition: ease-in-out 150ms;
+    
+}
+#buttonSubmit:hover 
+{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(89, 80, 94);
 }

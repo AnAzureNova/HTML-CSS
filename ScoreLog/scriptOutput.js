@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
         let tr = document.createElement("tr");
         let td = document.createElement("td");
         td.colSpan = 2;
-        td.textContent = "No scores stored.";
+        td.textContent = "NO DATA";
         td.style.textAlign = "center";
         tr.appendChild(td);
         tbody.appendChild(tr);
