@@ -54,13 +54,27 @@ a:visited{color: #d1d0d3; text-decoration: none; opacity: 0.7; font-size: 30px;}
 a:active{color: #d1d0d3; text-decoration: none; opacity: 0.7; font-size: 30px;}
 a:hover{color: white; text-decoration: none; opacity: 1; font-size: 35px;}
 table{
+    display: table;
+    margin-top: 10%;
+    width: 39%;
     border-collapse: collapse;
-    background-color: rgb(30, 24, 31);
-    border: 1px solid white;
+    box-sizing: border-box;
+    color: rgb(117, 101, 124);
+    background: fixed;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgb(117, 101, 124);
     text-align: center;
     font-weight: 100;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 200ms;
 }
-tr,td,th {border: 1px solid white;}
+tr,td,th {
+    border: 1px solid rgb(117, 101, 124);
+    width: auto;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 200ms;
+    padding: 5px;
+}
+table:hover{border: 1px solid rgb(255, 255, 255);width: 40%;}
+tr:hover{color: white; background-color: rgb(36, 34, 37); border: 1px solid rgb(255, 255, 255);}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
