@@ -1,10 +1,10 @@
 .list{
-    width: 90%;
+    width: 85%;
     text-align: center;
 }
 ul li {
     text-align: center;
-    list-style: none;
+    list-style:outside;
     line-height: 150px; 
     width: 100%;
     padding: 8px 12px;
