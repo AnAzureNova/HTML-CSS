@@ -1,0 +1,135 @@
+.list{
+    width: 90%;
+    text-align: center;
+}
+ul li {
+    text-align: center;
+    list-style: none;
+    line-height: 150px; 
+    width: 100%;
+    padding: 8px 12px;
+    position: relative;
+} 
+ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 800ms;
+}
+.list ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-color: rgb(14, 14, 14);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+}
+.li1::before {
+    background-image: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/09/silksong-green-prince-quest-walkthrough-unlock-lost-verdania-locations-greymoor-verdania-1.jpg?q=49&fit=contain&w=750&h=422&dpr=2");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+    background-position-y: 40%;
+}
+.li1:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
+.li2::before {
+    background-image: url("https://thegameslayer.com/wp-content/uploads/2025/09/How-To-Easily-Defeat-Nyleth-In-Silksong-2.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+}
+.li2:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
+.li3::before {
+    background-image: url("https://static0.thegamerimages.com/wordpress/wp-content/uploads/wm/2025/09/hollow-knight-silksong-cogwork-dancers-attacking.jpg?w=1600&h=900&fit=crop");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+}
+.li3:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
+.li4::before {
+    background-image: url("https://sm.ign.com/t/ign_jp/screenshot/default/screenshot-45-1550161851759_78kp.1080.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+}
+.li4:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
+.li5::before {
+    background-image: url("https://assetsio.gnwcdn.com/Silksong-Choral-Chambers.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+    background-position-y: 70%;
+}
+.li5:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
+.li6::before {
+    background-image: url("https://static0.thegamerimages.com/wordpress/wp-content/uploads/wm/2025/09/hollow-knight-silksong-bellhart.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+}
+.li6:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
+.li7::before {
+    background-image: url("https://media.altchar.com/prod/images/gm_featured_image/a5b43364fadb-how-to-beat-moorwing.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+}
+.li7:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
+.li8::before {
+    background-image: url("https://i.ytimg.com/vi/xNgEeyoKf4U/maxresdefault.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+    background-position-y: 60%;
+}
+.li8:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
+.li9::before {
+    background-image: url("https://nerdschalk.com/content/images/2025/10/skarrsinger-karmelita-secret-boss.png");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+}
+.li9:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
+.li10::before {
+    background-image: url("https://i.ytimg.com/vi/NVaco_sK-UU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGD0gZShiMA8=&rs=AOn4CLCivuXFvswVqf-aMiX7lUwCZF33DA");
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode:overlay;
+    background-position-y: 40%;
+}
+.li10:hover::before{
+    background-size: 110%;
+    background-color: rgb(48, 48, 48);
+}
