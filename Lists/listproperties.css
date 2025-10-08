@@ -1,6 +1,6 @@
 .list{
     margin-right: 80px;
-    width: 85%;
+    width: 90%;
     text-align: center;
 }
 ul li {
@@ -32,102 +32,118 @@ ul li a {
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
-    background-position-y: 40%;
+    background-position-y: 43%;
 }
 .li1:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 40%;
 }
 .li2::before {
     background-image: url("https://thegameslayer.com/wp-content/uploads/2025/09/How-To-Easily-Defeat-Nyleth-In-Silksong-2.jpg");
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
+    background-position-y: 53%;
 }
 .li2:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 50%;
 }
 .li3::before {
     background-image: url("https://static0.thegamerimages.com/wordpress/wp-content/uploads/wm/2025/09/hollow-knight-silksong-cogwork-dancers-attacking.jpg?w=1600&h=900&fit=crop");
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
+    background-position-y: 53%;
 }
 .li3:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 50%;
 }
 .li4::before {
     background-image: url("https://sm.ign.com/t/ign_jp/screenshot/default/screenshot-45-1550161851759_78kp.1080.jpg");
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
+    background-position-y: 53%;
 }
 .li4:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 50%;
 }
 .li5::before {
     background-image: url("https://assetsio.gnwcdn.com/Silksong-Choral-Chambers.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp");
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
-    background-position-y: 70%;
+    background-position-y: 73%;
 }
 .li5:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 70%;
 }
 .li6::before {
     background-image: url("https://static0.thegamerimages.com/wordpress/wp-content/uploads/wm/2025/09/hollow-knight-silksong-bellhart.jpg");
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
+    background-position-y: 53%;
 }
 .li6:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 50%;
 }
 .li7::before {
     background-image: url("https://media.altchar.com/prod/images/gm_featured_image/a5b43364fadb-how-to-beat-moorwing.jpg");
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
+    background-position-y: 53%;
 }
 .li7:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 50%;
 }
 .li8::before {
     background-image: url("https://i.ytimg.com/vi/xNgEeyoKf4U/maxresdefault.jpg");
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
-    background-position-y: 60%;
+    background-position-y: 63%;
 }
 .li8:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 60%;
 }
 .li9::before {
     background-image: url("https://nerdschalk.com/content/images/2025/10/skarrsinger-karmelita-secret-boss.png");
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
+    background-position-y: 53%;
 }
 .li9:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 50%;
 }
 .li10::before {
     background-image: url("https://i.ytimg.com/vi/NVaco_sK-UU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGD0gZShiMA8=&rs=AOn4CLCivuXFvswVqf-aMiX7lUwCZF33DA");
     background-position: center;
     background-size: 100%;
     background-blend-mode:overlay;
-    background-position-y: 40%;
+    background-position-y: 43%;
 }
 .li10:hover::before{
     background-size: 110%;
     background-color: rgb(48, 48, 48);
+    background-position-y: 40%;
 }
