@@ -14,10 +14,10 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-a:link{color: white; text-decoration: none; opacity: 0.5;}
-a:visited{color: white; text-decoration: none; opacity: 0.5;}
-a:active{color: white; text-decoration: none; opacity: 0.5;}
-a:hover{color: white; text-decoration: none; opacity: 1;font-size: 80px; letter-spacing: 5px; padding: 50px;} 
+a:link{color: white; text-decoration: none; opacity: 0.5; top: 5px;}
+a:visited{color: white; text-decoration: none; opacity: 0.5; top: 5px;}
+a:active{color: white; text-decoration: none; opacity: 0.5; top: 5px;}
+a:hover{color: white; text-decoration: none; opacity: 1;font-size: 80px; letter-spacing: 5px; padding: 50px; top: 6px;} 
 .main{
     display: flex;
     justify-content: center;
