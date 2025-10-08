@@ -1,18 +1,16 @@
 .list{
+    margin-right: 80px;
     width: 85%;
     text-align: center;
 }
 ul li {
-    text-align: center;
-    list-style: outside; /*FIX THIS*/
+    list-style: none;
     line-height: 150px; 
     width: 100%;
     padding: 8px 12px;
     position: relative;
 } 
 ul li a {
-    text-decoration: none;
-    cursor: pointer;
     position: relative;
     z-index: 1;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 800ms;
