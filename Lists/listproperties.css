@@ -4,7 +4,7 @@
 }
 ul li {
     text-align: center;
-    list-style:outside;
+    list-style: outside; /*FIX THIS*/
     line-height: 150px; 
     width: 100%;
     padding: 8px 12px;
