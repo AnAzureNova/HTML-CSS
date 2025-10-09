@@ -1,0 +1,15 @@
+form{
+    width: 50%;
+    border: solid black 1px;
+}
+input[type=checkbox]{
+    cursor: pointer;
+    margin: 10px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms;
+}
+#op1:checked + label, #op2:checked + label, #op3:checked + label{
+    background-color: aqua;
+}
+#op1:hover, #op2:hover, #op3:hover{
+    scale: 130%;
+}
