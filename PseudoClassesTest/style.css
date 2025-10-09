@@ -5,11 +5,18 @@ form{
 input[type=checkbox]{
     cursor: pointer;
     margin: 10px;
+    animation-name: test;
+    animation-duration: 1s;
+    animation-play-state: running;
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms;
+}
+@keyframes test{
+    from { scale: 100%; }
+    to { scale: 140%; }
 }
 #op1:checked + label, #op2:checked + label, #op3:checked + label{
     background-color: aqua;
 }
 #op1:hover, #op2:hover, #op3:hover{
-    scale: 130%;
+    transform: rotate(10deg);
 }
