@@ -1,22 +1,76 @@
+@font-face {
+    font-family: "Fixedsys";
+    src: url("Fixedsys62.woff") format("woff");
+}
+body{
+    font-size: 30px;
+    font-family: Fixedsys;
+    background: #222026;
+    text-shadow: 5px 4px 7px rgba(0,0,0,0.7);
+    user-select: none; 
+}
 form{
-    width: 50%;
-    border: solid black 1px;
+    position: relative;
+    top: 200px;
+    margin: 60px;
+    width: calc(100%-60px);
+    overflow: hidden;
+    border-radius: 10px;
+    background: #28282f;
+    background: linear-gradient(0deg,#28282f 0%, #211e25 50%, #28282f 100%);
+    background: -webkit-linear-gradient(0deg,#28282f 0%, #211e25 50%, #28282f 100%);
+    background: -moz-linear-gradient(0deg,#28282f 0%, #211e25 50%, #28282f 100%);
+    animation: color_change 3s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms;
+    box-shadow: 4px 37px 107px -6px rgba(0,0,0,0.79);
+    -webkit-box-shadow: 4px 37px 107px -6px rgba(0,0,0,0.79);
+    -moz-box-shadow: 4px 37px 107px -6px rgba(0,0,0,0.79);
+}
+form:hover{
+    margin: 55px;
+    width: calc(100%-55px);
+}
+.inner_form{
+    margin: 40px;
 }
 input[type=checkbox]{
     cursor: pointer;
-    margin: 10px;
-    animation-name: test;
-    animation-duration: 1s;
-    animation-play-state: running;
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms;
+    pointer-events: visiblePainted;
+    margin: 20px;
+    scale: 170%;
 }
-@keyframes test{
-    from { scale: 100%; }
-    to { scale: 140%; }
+@keyframes check_scale{
+    0% {scale: 170%;}
+    10% { scale: 300%; }
+    100% { scale: 170%; }
+}
+@keyframes check_flash{
+    0% {color: #9f93d9;}
+    100% {color: #ffffff;}
+}
+@keyframes color_change{
+    0% {color: #55505c; border: solid #ffffff 2px;}
+    50% {color: #796e83; border: solid #e0cef6 2px;}
+    100% {color: #55505c; border: solid #ffffff 2px;}
+}
+#op1 + label, #op2 + label, #op3 + label{
+    cursor: pointer;
 }
 #op1:checked + label, #op2:checked + label, #op3:checked + label{
-    background-color: aqua;
+    animation: check_flash 5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#op1:checked, #op2:checked, #op3:checked{
+    animation: check_scale 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#op1:hover + label, #op2:hover + label, #op3:hover + label{
+    color: #ffffff;
+    text-shadow: 11px 4px 14px rgba(0,0,0,0.79);
+    font-size: calc(100% + 2px);
+    margin-left: 3px;
+    letter-spacing: 2px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 100ms;
 }
 #op1:hover, #op2:hover, #op3:hover{
     transform: rotate(10deg);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 100ms;
 }
