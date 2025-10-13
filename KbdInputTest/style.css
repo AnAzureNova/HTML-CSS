@@ -49,7 +49,7 @@ kbd{
 #kbd_2{
     background-color: #242424;
 }
-#stepStatus, #mouseStatus{
+#stepStatus{
     color: #ffc1c1ff;  
 }
 #mouseStatus{
