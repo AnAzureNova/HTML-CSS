@@ -15,7 +15,6 @@ let lastMouseX = 0;
 let lastMouseY = 0;
 let width = 10; //%
 let stepVal = 1; //1 - normal, 4 - fast
-
 //other toggleables
 let isZoomingTowardsMouse = true;
 let isShiftToggled = false; //step
@@ -127,6 +126,7 @@ function onMouseDown(e) {
     img.style.cursor = "grabbing";
 }
 
+//on drag function
 function onMouseMove(e) {
     if (!isDragging) return; //cancel if not holding
     let movedByX = e.clientX - lastMousePosX;
