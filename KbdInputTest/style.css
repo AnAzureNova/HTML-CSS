@@ -15,7 +15,21 @@ body{
     width: auto;
     align-items: center;
 }
-.legend1 > p{
+.legend2{
+    position: fixed;
+    z-index: 2;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    padding: 10px;
+    line-height: 2px;
+    width: auto;
+    align-items: center;
+}
+.legend1 > p, .legend2 > p{
     margin-left: 10px;
 }
 kbd{
