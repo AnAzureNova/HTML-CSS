@@ -7,14 +7,14 @@ const crosshair = document.getElementById("crosshair");
 
 //max and min values
 const minZoomVal = 5;
-const maxZoomVal = 999;
+const maxZoomVal = 9999;
 //keyboard and mouse control values
 let Xpos = 50; //%
 let Ypos = 50; //%
 let lastMouseX = 0;
 let lastMouseY = 0;
 let width = 100; //%
-let stepVal = 2; //1 - normal, 4 - fast
+let stepVal = 3; //3 - normal, 10 - fast
 //other toggleables
 let isZoomingTowardsMouse = true;
 let isShiftToggled = false; //step
@@ -89,7 +89,7 @@ window.addEventListener("keydown", function(event) {
             break;
         case "Shift": //step
             isShiftToggled =! isShiftToggled;
-            stepVal = isShiftToggled ? 4 : 1;
+            stepVal = isShiftToggled ? 10 : 3;
             updateStatus();
             break;
         case "Control": //mouse
@@ -150,7 +150,7 @@ function onMouseUp() {
 //mouse zoom func :P
 function onMouseWheel(e) {
     const tempWidth = width;
-    const zoomVal = stepVal * 4;
+    const zoomVal = stepVal * 3;
 
     if (e.deltaY < 0) {
         width += zoomVal; //scroll up (zoom in)
