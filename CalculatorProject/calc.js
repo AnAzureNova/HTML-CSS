@@ -1,4 +1,4 @@
-let out;
+let out = "";
 let reg = [];
 reg[0] = ""; reg[1] = "";
 let numberIndex = 0;
@@ -13,6 +13,7 @@ let nullCounter = 0;
 const out0 = document.getElementById("out0");
 const outC = document.getElementById("outC");
 const out1 = document.getElementById("out1");
+const errOut = document.getElementById("errOut");
 const outputField = document.getElementsByClassName("outputField")[0];
 const nullPad = document.getElementById("null");
 
@@ -20,11 +21,12 @@ const nullPad = document.getElementById("null");
 function errorHandler(errorIndex){
     switch(errorIndex){
         case 0: alert("ERROR 0 : Unknown error");break;
-        case 1: alert("ERROR 1 : Syntax error");break;
-        case 2: alert("ERROR 2 : Cannot divide by zero"); nullCounter++; break;
-        case 3: alert("ERROR 3 : No answer in registry");break;
-        case '?': alert("ERROR ? : stop"); nullCounter=0; break;
+        case 1: errOut.innerHTML="Syntax Error"; out0.innerHTML="";  outC.innerHTML="";  out1.innerHTML=""; break;
+        case 2: errOut.innerHTML="Cannot Divide by 0";  out0.innerHTML="";  outC.innerHTML="";  out1.innerHTML=""; nullCounter++; break;
+        case 3: errOut.innerHTML="No Answer in Registry";  out0.innerHTML="";  outC.innerHTML="";  out1.innerHTML=""; break;
+        case '?': out0.innerHTML="";  outC.innerHTML="";  out1.innerHTML=""; alert("ERROR ? : stop"); nullCounter=0; break;
     }
+    consoleLog();
 }
 function consoleLog(){
     console.log(`---\n${reg[0]} ${charReg} ${reg[1]}\nisReg1Full: ${isFirstIndexFull}\nisReg2Full: ${isSecondIndexFull}\nisFinished: ${isCalculationDone}\nIndex: ${numberIndex}\nOUT-REG: ${out}\n---`);
@@ -35,6 +37,7 @@ function erase(){
     reg[1] = "";
     out = "";
     charReg = "";
+    errOut.innerHTML=""; 
     isFirstIndexFull = false;
     isSecondIndexFull = false;
     isCalculationDone = false;
@@ -50,10 +53,12 @@ function input(inputValue){
     }
     if(numberIndex==0){
         if (inputValue == 'answer'){
-            if (out == undefined){
+            if (out == ""){
                 errorHandler(3);
                 hasFailed = true;
-                erase();
+                setTimeout(() => {
+                    erase();
+                }, 1000);
             }
             charReg = "";
             outC.innerHTML=charReg;
@@ -71,12 +76,15 @@ function input(inputValue){
         if (nullCounter>=2){
             errorHandler('?');
             nullPad.style.scale="0%";
+            erase();
         }
         if (inputValue == 'answer'){
-            if (out == undefined){
+            if (out == ""){
                 errorHandler(3);
                 hasFailed = true;
-                erase();
+                setTimeout(() => {
+                    erase();
+                }, 1000);
             }
             reg[1] = out;
             out1.innerHTML=reg[1];
@@ -117,7 +125,9 @@ function calc(){
         if (reg[1]==0){
             errorHandler(2);
             hasFailed = true;
-            erase();
+            setTimeout(() => {
+                erase();
+            }, 1000);
         }
         else out = reg[0] / reg[1]; break;
         default: out = reg[0]; break;
@@ -125,12 +135,16 @@ function calc(){
     if (!isFirstIndexFull) {
         errorHandler(1);
         hasFailed = true;
-        erase();
+        setTimeout(() => {
+            erase();
+        }, 1000);
     }
     else if(numberIndex == 1 && !isSecondIndexFull){
         errorHandler(1);
         hasFailed = true;
-        erase();
+        setTimeout(() => {
+            erase();
+        }, 1000);
     }
     if (!hasFailed){
         out0.innerHTML=out;
