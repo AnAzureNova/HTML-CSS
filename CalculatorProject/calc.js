@@ -68,7 +68,7 @@ function input(inputValue){
         isCalculationDone = false;
     } 
     else{
-        if (nullCounter>=0){
+        if (nullCounter>=2){
             errorHandler('?');
             nullPad.style.scale="0%";
         }
