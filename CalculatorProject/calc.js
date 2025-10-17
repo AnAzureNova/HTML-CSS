@@ -14,6 +14,7 @@ const out0 = document.getElementById("out0");
 const outC = document.getElementById("outC");
 const out1 = document.getElementById("out1");
 const outputField = document.getElementsByClassName("outputField")[0];
+const nullPad = document.getElementById("null");
 
 
 function errorHandler(errorIndex){
@@ -67,9 +68,9 @@ function input(inputValue){
         isCalculationDone = false;
     } 
     else{
-        if (nullCounter>=2){
+        if (nullCounter>=0){
             errorHandler('?');
-            window.location.reload();
+            nullPad.style.scale="0%";
         }
         if (inputValue == 'answer'){
             if (out == undefined){
