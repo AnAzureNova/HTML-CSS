@@ -157,7 +157,7 @@ function calc(){
         isSecondIndexFull = false;
         isCalculationDone = true;
 
-        outputField.style.backgroundColor = "#353535ff"; // darker
+        outputField.style.backgroundColor = "#353535ff";
         console.log(out);
         consoleLog();
 
