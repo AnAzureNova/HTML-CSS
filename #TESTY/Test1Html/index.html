@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1 - Html</title>
+</head>
+<body>
+    <form>
+    <table border="1" width="60%">
+        <tr>
+            <th colspan="4"><h2>Registration Form</h2></th>
+        </tr>
+        <tr>
+            <th>Students Name</th>
+            <td><input type="text" placeholder="First Name"></td>
+            <td><input type="text" placeholder="Middle Name"></td>
+            <td><input type="text" placeholder="Last Name"></td>
+        </tr>
+        <tr>
+            <th>Fathers Name</th>
+            <td><input type="text" placeholder="Enter your fathers Name"></td>
+            <th>Mothers Name</th>
+            <td><input type="text" placeholder="Enter your mothers Name"></td>
+        </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <td><input type="date"></td>
+            <th>Gender</th>
+            <td>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Female</label>
+                <input type="radio" id="female" name="gender">
+            </td>
+        </tr>
+        <tr>
+            <th>Category</th>
+            <td>
+                <label for="Gen">Gen</label>
+                <input type="radio" id="gen" name="cat">
+                <label for="OBC">OBC</label>
+                <input type="radio" id="OBC" name="cat">
+                <label for="SC/ST">SC/ST</label>
+                <input type="radio" id="SC/ST" name="cat">
+            </td>
+            <th>Handicapped</th>
+            <td>
+                <label for="Yes">Yes</label>
+                <input type="radio" id="Yes" name="hcapped">
+                <label for="No">No</label>
+                <input type="radio" id="No" name="hcapped">
+            </td>
+        </tr>
+        <tr>
+            <th>Email ID</th>
+            <td><input type="email"></td>
+            <th>Mobile No.</th>
+            <td><input type="tel"></td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td><button type="menu">Select any One</button></td>
+            <th>City</th>
+            <td><button type="menu">Select any One</button></td>
+        </tr>
+        <tr>
+            <th>Upload Photo</th>
+            <td><input type="file"></td>
+            <th>Upload Signature</th>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td colspan="3"><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
