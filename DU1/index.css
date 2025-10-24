@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    overflow-x: hidden;
+    margin: 20px 40px 20px 40px;
+}
+div{
+    width: 100%;
+}
+
+/*FIRST SECTION*/
+.div1nav{
+    display: flex;
+    flex-direction: column;
+    background: url("images/pexels-photo-9392381.jpeg") no-repeat;
+    background-size: cover;
+    background-position-y: 45%;
+    width: auto;
+    height: auto;
+    padding: 40px 80px 80px 80px;    
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+/*NAVBAR*/
+.navbar{
+    display: grid;
+    grid-template-columns: 80% auto auto auto;
+}
+#searchbar{
+    border: solid #949494 1px;
+    background: url("images/icons/search-interface-symbol.png") no-repeat;
+    background-size: 8%;
+    background-position: 90%;
+    background-clip: padding-box;
+    padding: 10px;
+    width: 20%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+}
+.navbar a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: right;
+    justify-content: right;
+    padding: 10px;
+}
+#dir1{
+    color: #ffc400;
+}
+/*NAVBAR*/
+.div1nav h1{
+    font-size: 6rem;
+    color: #ffc400;
+    width: 50%;
+    margin-top: 250px;
+}
+/*INFOBOXES*/
+.infoboxes{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 40px;
+}
+.infoboxes > .box1, .box2, .box3{
+    color: #fff;
+    background: #282c4277;
+    padding: 50px;
+}
+.infoboxes #buttonMore{
+    color: #fff;
+    background: #10093518;
+    border: solid #ffc400 1px;
+    padding: 10px 40px 10px 40px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
+.infoboxes h3{
+    letter-spacing: 0.2rem;
+    padding: 20px 0 20px 0;
+}
+.infoboxes .box1{ /*BUILDING ICON*/
+    background-image: url("images/icons/building.png");
+    background-repeat: no-repeat;
+    background-position: 90% 15%;
+    background-size: 15%;
+}
+.infoboxes .box2{ /*INDUSTRIAL ICON*/
+    background-image: url("images/icons/factory.png");
+    background-repeat: no-repeat;
+    background-position: 90% 15%;
+    background-size: 15%;
+}
+.infoboxes .box3{ /*FUTURE ICON*/
+    background-image: url("images/icons/home.png");
+    background-repeat: no-repeat;
+    background-position: 90% 15%;
+    background-size: 20%;
+}
+/*INFOBOXES*/
+/*FIRST SECTION*/
