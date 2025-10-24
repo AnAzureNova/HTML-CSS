@@ -6,18 +6,14 @@ body{
     background: #eaeef0;
     font-size: 22px;
     font-family: Roboto;
-    overflow-x: hidden;
     margin: 20px 40px 20px 40px;
-}
-div{
-    width: 100%;
 }
 /*GLOBAL*/
 /*---------------------------------------------------------------------------------------------------*/
 
 /*---------------------------------------------------------------------------------------------------*/
 /*FIRST SECTION*/
-.div1nav{
+.div1{
     display: flex;
     flex-direction: column;
     background: url("images/pexels-photo-9392381.jpeg") no-repeat;
@@ -55,7 +51,7 @@ div{
     color: #ffc400;
 }
 /*NAVBAR*/
-.div1nav h1{
+.div1 h1{
     font-size: 6rem;
     color: #ffc400;
     width: 50%;
@@ -65,12 +61,13 @@ div{
 .infoboxes{
     display: flex;
     flex-direction: row;
-    width: auto;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 70px;
 }
 .infoboxes > .box1, .box2, .box3{
     color: #fff;
     background: #282c4277;
+    width: 100%;
     padding: 50px;
 }
 .infoboxes #buttonMore{
@@ -109,7 +106,7 @@ div{
 
 /*---------------------------------------------------------------------------------------------------*/
 /*SECOND SECTION*/
-.div2info{
+.div2{
     display: grid; 
     grid-template-columns: 30% auto;
     gap: 50px;
@@ -123,15 +120,15 @@ div{
     padding: 100px;    
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
-.div2info p{
+.div2 p{
     margin: 0 30px 30px 30px;
 }
-.div2info h3{
+.div2 h3{
     letter-spacing: 0.2rem;
     padding: 20px 0 20px 0;
 }
 /*IMAGE BLOCK*/
-.div2info .imageBlock{
+.div2 .imageBlock{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -150,21 +147,21 @@ div{
 }
 /*IMAGE BLOCK*/
 /*TEXT BLOCK*/
-.div2info .textBlock{
+.div2 .textBlock{
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
     gap: 20px;
 }
 /*BOX1*/
-.div2info .textBox1{
+.div2 .textBox1{
     text-align: center;
 }
-.div2info h2{
+.div2 h2{
     font-size: 3rem;
     margin: 50px 50px 0 50px;
 }
-.div2info hr{
+.div2 hr{
     background: #ffc400;
     border: none;
     align-self: center;
