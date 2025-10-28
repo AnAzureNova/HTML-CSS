@@ -10,6 +10,7 @@ body{
     min-width: 1200px;
     max-width: 2400px;
     margin: 20px 40px 20px 40px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
 }
 p{
     letter-spacing: 0.1rem;
@@ -37,6 +38,12 @@ h4{
 #dim{
     color: #858585;
 }
+button{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+}
+button:hover{
+    scale: 110%;
+}
 /*---------------------------------------------------------------------------------------------------*/
 
 
@@ -61,6 +68,7 @@ h4{
     grid-template-columns: 80% auto auto auto;
 }
 #searchbar{
+    color: #fff;
     border: solid #949494 1px;
     background: url("images/icons/search-interface-symbol.png") no-repeat;
     background-size: 8%;
@@ -70,6 +78,9 @@ h4{
     width: 20%;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
 }
+#searchbar:hover{
+    scale: 110%;
+}
 .navbar a{
     color: #000000;
     text-decoration: none;
@@ -77,6 +88,9 @@ h4{
     text-align: right;
     justify-content: right;
     padding: 10px;
+}
+.navbar a:hover{
+    scale: 110%;
 }
 #dir1{
     color: #ffc400;
@@ -98,6 +112,7 @@ h4{
     background: #282c4277;
     width: 100%;
     padding: 50px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
 }
 .infoboxes1 #buttonMore{
     color: #fff;
@@ -106,6 +121,7 @@ h4{
     padding: 10px 40px 10px 40px;
     margin: 10px 0 10px 0;
     cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
 }
 .box1{ /*BUILDING ICON*/
     background-image: url("images/icons/building.png");
@@ -197,7 +213,6 @@ h4{
     color: #fff;
     background: #ffc400;
     border: none;
-    scale: 120%;
     padding: 15px 60px 15px 60px;
     margin: 10px 0 10px 0;
     cursor: pointer;
