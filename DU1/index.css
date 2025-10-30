@@ -176,7 +176,7 @@ button:hover{
     background-position: center;
     text-align: center;
     width: auto;
-    height: 90vh;
+    height: 900px;
 }
 #signature{
     align-self: center;
@@ -533,7 +533,7 @@ button:hover{
 }
 .infoboxes3 #img{
     aspect-ratio: 1/1;
-    width: 10vw;
+    width: 150px;
     object-fit: cover;
     border-radius: 100%;
 }
