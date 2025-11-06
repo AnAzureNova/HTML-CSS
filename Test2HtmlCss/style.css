@@ -1,0 +1,88 @@
+body{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(63, 63, 63);
+    background-image: url("https://asset.gallup.com/p/WORKPLACEV9CMS/515ce5b4-250a-472d-9928-13ec86888ff4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid white 1px;
+}
+.logoImg{
+    width: 20%;
+    margin: 5px 0 5px 100px;
+}
+header .textLabels{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    gap: 20px;
+}
+.textLabels #icon{
+    width: 10%;
+}
+.textBlock1{
+    text-align: center;
+    padding: 100px;
+}
+.textBlock1 #button{
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+}
+#sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    background-color: #336aff;
+    width: auto;
+    padding: 100px;
+}
+#sec1 h1{
+    margin: 50px;
+}
+#sec1 .gridBlock{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 50px;
+}
+#sec2{
+    display: flex;
+    flex-direction: row;
+    background-color: #363636;
+}
+#sec2 .textBlock2{
+    width: 50%;
+    padding: 100px;
+}
+.textBlock2 #button{
+    color: white;
+    background: none;
+    border-radius: 20px;
+    border: solid white 1px;
+    padding: 10px;
+    margin: 20px;
+}
+.imageBlock{
+    width: 50%;
+}
+.imageBlock #backgroundImg{
+    width: 100%;
+}
