@@ -141,7 +141,7 @@ function ukol34(){
     changeBG("gray")
 }
 function ukol34revert(){
-    changeBG("white")
+    changeBG("black")
 }
 function changeBG(color){
     document.body.style.backgroundColor = color;
@@ -152,8 +152,33 @@ const image = document.getElementById("image");
 image.addEventListener("mouseover", mouseover_func);
 image.addEventListener("mouseout", mouseout_func);
 function mouseover_func(){
-    image.style.width = "50%";
+    image.style.width = "100%";
 }
 function mouseout_func(){
-    image.style.width = "10%";
+    image.style.width = "2%";
+}
+
+//form thing
+let input1 = "";
+let input2 = "";
+document.getElementById("buttonSubmit").addEventListener("click",submitForm);
+function submitForm(){
+    event.preventDefault();
+    input1 = document.getElementById("input1").value;
+    input2 = document.getElementById("input2").value;
+    console.log(input1);
+    console.log(input2);
+}
+document.getElementById("buttonDisplay").addEventListener("click", formRead);
+function formRead(){
+    document.getElementById("output1").innerHTML = input1;
+    document.getElementById("output2").innerHTML = input2; //this didnt work for like 30 minutes just cause i cant read what i write never agianlakjslkjsfa
+}
+
+//click to win
+let ammount = 0;
+document.getElementById("buttonAddClick").addEventListener("click", clickerAddFunc);
+function clickerAddFunc(){
+    ammount += 1;
+    document.getElementById("clickCountLabel").innerHTML = ammount;
 }

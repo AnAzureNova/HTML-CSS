@@ -7,26 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="button" onclick="ukol1();">Ukol 1</button>
-    <button id="button" onclick="ukol2();">Ukol 2</button>
-    <button id="button" onclick="ukol3();">Ukol 3</button>
-    <button id="button" onclick="ukol4();">Ukol 4</button>
-    <button id="button" onclick="ukol5();">Ukol 5</button>
-    <button id="button" onclick="ukol6();">Ukol 6</button>
-    <button id="button" onclick="ukol7();">Ukol 7</button>
-    <br>
-    <br>
-    <button id="buttonWithListener1">Ukol 31</button>
-    <button id="button" onclick="ukol32();">Ukol 32</button>
-    <button id="button" onclick="ukol33();">Ukol 33</button>
-    <button id="button" onclick="ukol34();">Ukol 34</button>
-    <button id="button" onclick="ukol34revert();">BG Reset</button>
-
-    <h1 id="label">...</h1>
-    <div id="timeField"></div>
     <img id="image" src="https://tse2.mm.bing.net/th/id/OIP.3HCTiI5MGEGNFzU_LzKRQAHaGA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="temp">
-    <form>
-    </form>
+    <section class="sec1">
+        <button id="button" onclick="ukol1();">Ukol 1</button>
+        <button id="button" onclick="ukol2();">Ukol 2</button>
+        <button id="button" onclick="ukol3();">Ukol 3</button>
+        <button id="button" onclick="ukol4();">Ukol 4</button>
+        <button id="button" onclick="ukol5();">Ukol 5</button>
+        <button id="button" onclick="ukol6();">Ukol 6</button>
+        <button id="button" onclick="ukol7();">Ukol 7</button>
+        <button id="buttonWithListener1">Ukol 31</button>
+        <button id="button" onclick="ukol32();">Ukol 32</button>
+        <button id="button" onclick="ukol33();">Ukol 33</button>
+        <button id="button" onclick="ukol34();">Ukol 34</button>
+        <button id="button" onclick="ukol34revert();">BG Reset</button>
+    </section>
+    <section class="sec2">
+        <h1 id="label">...</h1>
+        <div id="timeField"></div>
+    </section>
+    <section>
+        <form>
+            <input id="input1" type="text" placeholder="input1"><br>
+            <input id="input2" type="text" placeholder="input2"><br>
+            <button id="buttonSubmit" type="submit">SUBMIT</button>
+        </form>
+        <button id="buttonDisplay">Display Input</button><br>
+        <p id="output1">Input1</p>
+        <p id="output2">Input2</p>
+    </section>
+    <section>
+        <button id="buttonAddClick">Add 1</button>
+        <p id="clickCountLabel">0</p>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
