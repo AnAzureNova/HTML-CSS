@@ -146,3 +146,14 @@ function ukol34revert(){
 function changeBG(color){
     document.body.style.backgroundColor = color;
 }
+
+//image hover without css
+const image = document.getElementById("image");
+image.addEventListener("mouseover", mouseover_func);
+image.addEventListener("mouseout", mouseout_func);
+function mouseover_func(){
+    image.style.width = "50%";
+}
+function mouseout_func(){
+    image.style.width = "10%";
+}
