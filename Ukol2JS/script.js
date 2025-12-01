@@ -132,7 +132,7 @@ function clock(){
     timeOutput.innerHTML = getTime();
 }
 function getTime(){ //time grab
-    var currTime = new Date().toLocaleTimeString();
+    let currTime = new Date().toLocaleTimeString();
     return currTime;
 }
 
