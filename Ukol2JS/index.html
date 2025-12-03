@@ -9,17 +9,17 @@
 <body>
     <img id="image" src="https://tse2.mm.bing.net/th/id/OIP.3HCTiI5MGEGNFzU_LzKRQAHaGA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="temp">
     <section class="sec1">
-        <button id="button" onclick="ukol1();">Ukol 1</button>
-        <button id="button" onclick="ukol2();">Ukol 2</button>
-        <button id="button" onclick="ukol3();">Ukol 3</button>
-        <button id="button" onclick="ukol4();">Ukol 4</button>
-        <button id="button" onclick="ukol5();">Ukol 5</button>
-        <button id="button" onclick="ukol6();">Ukol 6</button>
-        <button id="button" onclick="ukol7();">Ukol 7</button>
-        <button id="buttonWithListener1">Ukol 31</button>
-        <button id="button" onclick="ukol32();">Ukol 32</button>
-        <button id="button" onclick="ukol33();">Ukol 33</button>
-        <button id="button" onclick="ukol34();">Ukol 34</button>
+        <button id="button" onclick="ukol1();">Addition</button>
+        <button id="button" onclick="ukol2();">Odd/Even</button>
+        <button id="button" onclick="ukol3();">Temperature</button>
+        <button id="button" onclick="ukol4();">Pos/Neg</button>
+        <button id="button" onclick="ukol5();">Is there an "A"</button>
+        <button id="button" onclick="ukol6();">Sentence Analyser</button>
+        <button id="button" onclick="ukol7();">Prime Number</button>
+        <button id="buttonWithListener1">HELLO WORLD</button>
+        <button id="button" onclick="ukol32();">Arrow Function Test</button>
+        <button id="button" onclick="ukol33();">Display Time</button>
+        <button id="button" onclick="ukol34();">Change Background</button>
         <button id="button" onclick="ukol34revert();">BG Reset</button>
     </section>
     <section class="sec2">
@@ -28,7 +28,7 @@
     </section>
     <section>
         <form>
-            <input id="input1" type="text" placeholder="input1"><br>
+            <input id="input1" type="text" placeholder="input1">
             <input id="input2" type="text" placeholder="input2"><br>
             <button id="buttonSubmit" type="submit">SUBMIT</button>
         </form>
@@ -40,6 +40,22 @@
         <button id="buttonAddClick">Add 1</button>
         <p id="clickCountLabel">0</p>
     </section>
+    <section>
+        <button id="button" onclick="hideText();">HIDE</button>
+        <button id="button" onclick="showText();">SHOW</button>
+        <h1 id="labelToggleable">TEXT THAT WILL GET HIDDEN</h1>
+    </section>
+    <section>
+        <form>
+            <input id="inputName" type="text" placeholder="NAME HERE">
+            <input id="inputEmail" type="email" placeholder="EMAIL HERE"><br>
+            <button id="buttonSubmit2" type="submit">SUBMIT</button>
+        </form>
+    </section>
+    <section>
+        <input id="range" type="range" min="5" max="200" value="10" oninput="refreshFunc(value);">
+        <p id="changeSize">10</p>
+    </section>  
     <script src="script.js"></script>
 </body>
 </html>

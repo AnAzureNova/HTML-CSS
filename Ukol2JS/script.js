@@ -141,7 +141,7 @@ function ukol34(){
     changeBG("gray")
 }
 function ukol34revert(){
-    changeBG("black")
+    changeBG("white")
 }
 function changeBG(color){
     document.body.style.backgroundColor = color;
@@ -182,3 +182,27 @@ function clickerAddFunc(){
     ammount += 1;
     document.getElementById("clickCountLabel").innerHTML = ammount;
 }
+
+function hideText(){
+    document.getElementById("labelToggleable").classList.toggle("invisible");
+}
+function showText(){
+    document.getElementById("labelToggleable").classList.toggle("invisible");
+}
+
+//form but working maybe
+document.getElementById("buttonSubmit2").addEventListener("click",validateForm);
+function validateForm(){
+    const nameVal = document.getElementById("inputName").value;
+    const emailVal = document.getElementById("inputEmail").value;
+    //finish this later
+}
+
+//change text size using a slider
+const slider = document.getElementById("range");
+const textField = document.getElementById("changeSize");
+function refreshFunc(e){
+    textField.innerHTML = e;
+    textField.style.fontSize  = e+"px";
+}
+

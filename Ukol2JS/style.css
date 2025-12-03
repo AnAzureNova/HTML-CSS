@@ -1,15 +1,15 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin: 10px;
 }
 button{
-    color: white;
-    border: solid 1px white;
+    color: black;
+    border: solid 1px black;
     border-radius: 10px;
-    background-color: #181818;
+    background-color: #c4c4c4;
     width: 20%;
     padding: 5px;
     margin: 5px;
@@ -39,7 +39,13 @@ section{
     width: 50%;
     margin: 10px;
     padding: 10px;
-    border: solid 1px white;
+    border: solid 1px black;
     border-radius: 20px;
-    background-color: #161616;
+    background-color: #e7e7e7;
+}
+.invisible{
+    display: none;
+}
+#changeSize{
+    font-size: 10px;
 }
