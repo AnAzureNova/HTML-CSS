@@ -56,6 +56,16 @@
         <input id="range" type="range" min="5" max="200" value="10" oninput="refreshFunc(value);">
         <p id="changeSize">10</p>
     </section>  
+    <section>
+        <button id="button" onclick="factorial(5);">SHOW</button>
+        <p id="factPrint">...</p>
+    </section>  
+    <section>
+        <input id="todoInput" type="text" placeholder="Current task">
+        <button onclick="addToDo();">ADD TODO</button>
+        <button onclick="clearToDo();">CLEAR</button>
+        <ul id="todoList"></ul>
+    </section>  
     <script src="script.js"></script>
 </body>
 </html>

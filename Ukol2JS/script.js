@@ -193,6 +193,7 @@ function showText(){
 //form but working maybe
 document.getElementById("buttonSubmit2").addEventListener("click",validateForm);
 function validateForm(){
+    ev.preventDefault();
     const nameVal = document.getElementById("inputName").value;
     const emailVal = document.getElementById("inputEmail").value;
     //finish this later
@@ -204,5 +205,25 @@ const textField = document.getElementById("changeSize");
 function refreshFunc(e){
     textField.innerHTML = e;
     textField.style.fontSize  = e+"px";
+}
+
+let result = 1;
+function factorial(){
+    const e = Number(prompt("Input Number"));
+    if(e>0){
+        for(let i = 1; i<=e;i++){
+            result *= i;
+        }
+        document.getElementById("factPrint").innerHTML = result;
+    }
+}
+
+function addToDo(){
+    const toDoInput = document.getElementById("todoInput");
+    const toDoOutput =  document.getElementById("todoList");
+    if(!toDoInput.value.trim()) return;
+    const listEntry = document.createElement("li");
+    listEntry.innerHTML=toDoInput.value;
+    toDoOutput.appendChild(listEntry);
 }
 
